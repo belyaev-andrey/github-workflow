@@ -1,4 +1,5 @@
 on:
+  fork:
   push:
     branches:
       - main
