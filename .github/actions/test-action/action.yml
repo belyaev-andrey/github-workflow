@@ -1,0 +1,8 @@
+name: Test Action
+description: Runs a test action on bash
+runs:
+  using: composite
+  steps:
+    - name: Bash echo
+      shell: bash
+      run: echo Test Action
