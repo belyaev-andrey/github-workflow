@@ -13,7 +13,7 @@ jobs:
           clean: true
           show-progress: true
       - name: Echo
-        uses: actions/test-action
+        uses: ./.github/actions/test-action
       - name: Set up JDK 17
         uses: actions/setup-java@v2
         with:
