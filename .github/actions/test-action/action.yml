@@ -6,3 +6,8 @@ runs:
     - name: Bash echo
       shell: bash
       run: echo Test Action
+    - name: New Step
+      env:
+        ECHO_STRING: 'Echo'
+      run: echo $ECHO_STRING
+      shell: bash
