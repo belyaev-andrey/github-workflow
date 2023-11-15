@@ -9,5 +9,5 @@ runs:
     - name: New Step
       env:
         ECHO_STRING: 'Echo'
-      run: echo $ECHO_STRING $${{github.agent}}
+      run: echo $ECHO_STRING ${{github.agent}}
       shell: bash
