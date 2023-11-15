@@ -9,8 +9,10 @@ runs:
     - name: Bash echo
       shell: bash
       run: echo Test Action
+      id: bash-echo
     - name: New Step
+      id: new-step
       env:
         ECHO_STRING: 'Echo'
-      run: echo $ECHO_STRING ${{github.actor}}
+      run: echo $ECHO_STRING ${{github.actor}} ${{steps.bash-echo}}
       shell: bash
