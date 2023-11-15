@@ -1,5 +1,8 @@
 name: Test Action
 description: Runs a test action on bash
+branding:
+  color: yellow
+  icon: command
 runs:
   using: composite
   steps:
