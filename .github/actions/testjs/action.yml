@@ -1,0 +1,10 @@
+name: actions
+author: andrey.belyaev
+description: actions
+inputs:
+  world:
+    required: true
+    description: World name
+runs:
+  using: 'node20'
+  main: dist/index.js
