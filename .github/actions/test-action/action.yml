@@ -16,3 +16,7 @@ runs:
         ECHO_STRING: 'Echo'
       run: echo $ECHO_STRING ${{github.actor}} ${{steps.bash-echo}}
       shell: bash
+    - name: Another Action
+      uses: ./.github/actions/testjs
+      with:
+        world: 'Hey World from action test-action'
