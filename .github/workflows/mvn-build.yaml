@@ -14,12 +14,12 @@ jobs:
         with:
           clean: true
           show-progress: true
-      - name: Echo
-        uses: ./.github/actions/test-action
       - name: Install node packages
         run: |
           npm install @actions/core
           npm install @actions/github
+      - name: Echo
+        uses: ./.github/actions/test-action
       - name: Test JS Action
         uses: ./.github/actions/testjs
         with:
