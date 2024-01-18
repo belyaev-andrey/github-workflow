@@ -1,0 +1,6 @@
+name: actions
+author: andrey.belyaev
+description: actions
+runs:
+  using: docker
+  image: mysql:5

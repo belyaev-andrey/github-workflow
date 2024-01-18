@@ -1,10 +1,16 @@
 name: actions
 author: andrey.belyaev
 description: actions
+branding:
+  color: blue
+  icon: arrow-down-circle
 inputs:
   world:
     required: true
     description: World name
+  world1:
+    required: true
+    description: 'sdsd'
 runs:
   using: 'node20'
-  main: dist/index.js
+  main: "dist/index.js"
