@@ -23,7 +23,6 @@ jobs:
         with:
           test: 'Echo test 1'
           test2: 'Echo test 2'
-          input3: ''
       - name: Echo2
         uses: ./src/main/resources/actions/hello
       - name: Test JS Action
