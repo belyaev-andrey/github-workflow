@@ -1,0 +1,12 @@
+name: Test Action
+description: Runs a test action on bash
+branding:
+  color: green
+  icon: credit-card
+runs:
+  using: composite
+  steps:
+    - name: Bash echo
+      shell: bash
+      run: echo Test Action
+      id: bash-echo
