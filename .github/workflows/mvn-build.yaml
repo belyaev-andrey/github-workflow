@@ -25,7 +25,9 @@ jobs:
   RunEcho:
     name: 'Run Echo'
     runs-on: ubuntu-latest
-    needs: InstallNode
+    needs:
+      - InstallNode
+      - Checkout
     steps:
       - name: Echo
         uses: ./.github/actions/test-action
