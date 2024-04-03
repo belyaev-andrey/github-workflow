@@ -15,7 +15,6 @@ jobs:
           show-progress: true
   InstallNode:
     name: 'Install NodeJS Test'
-    needs: RunJava
     runs-on: ubuntu-latest
     steps:
       - name: Install node packages
@@ -53,7 +52,7 @@ jobs:
   RunJava:
     name: 'Build WithJava'
     runs-on: ubuntu-latest
-    needs: RunEcho
+    needs: [Checkout, InstallNode]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
