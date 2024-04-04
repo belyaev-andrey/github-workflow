@@ -30,6 +30,7 @@ jobs:
     needs:
       - job4
       - job5
+      - job1
     steps:
       - name: job3
         shell: sh
