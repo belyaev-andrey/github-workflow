@@ -13,6 +13,8 @@ jobs:
         with:
           clean: true
           show-progress: true
+      - name: src-action
+        uses: ./src/main/resources/actions/hello
   InstallNode:
     name: 'Install NodeJS Test'
     runs-on: ubuntu-latest
