@@ -10,7 +10,7 @@ inputs:
     description: World name
   world1:
     required: true
-    description: 'sdsd'
+    description: 'sdsdf'
 runs:
   using: 'node20'
   main: "dist/index.js"
