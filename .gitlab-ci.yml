@@ -10,6 +10,10 @@ test-job1:
 
 test-job2:
   stage: test
+  needs:
+    - job: w
+      artifacts: false
+    - 
   script:
     - echo "This job tests something, but takes more time than test-job1."
     - echo "After the echo commands complete, it runs the sleep command for 20 seconds"
@@ -21,3 +25,4 @@ deploy-prod:
   script:
     - echo "This job deploys something from the $CI_COMMIT_BRANCH branch."
   environment: production
+
